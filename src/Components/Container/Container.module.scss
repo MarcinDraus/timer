@@ -1,0 +1,18 @@
+@import '../../styles/settings.scss';
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+    background-color: $color-dark;
+
+    padding: ($base-size * 3) 0;
+    text-align: center;
+    font-size: ($base-size * 2);
+    text-transform: uppercase;
+}
+
+
+  
