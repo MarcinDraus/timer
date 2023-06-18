@@ -37,11 +37,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "css-loader": "^6.8.1",
     "node-sass": "^7.0.3",
     "postcss-loader": "^7.3.3",
     "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^13.3.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
+    "sass-loader": "^13.3.2"
   }
 }
