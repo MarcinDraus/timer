@@ -4,16 +4,16 @@ import styles from './FormattedTime.module.scss';
 
 const FormattedTime = ({ time }) => {
   const formatTime = (milliseconds) => {
-    const hours = Math.floor(milliseconds / (60 *60 * 1))
+    const hours = Math.floor(milliseconds / (60 *60 * 1000))
       .toString()
       .padStart(2, '0');
-    const minutes = Math.floor((milliseconds / (60 * 1)) % 60)
+    const minutes = Math.floor((milliseconds / (60 * 1000)) % 60)
       .toString()
       .padStart(2, '0');
-    const seconds = Math.floor((milliseconds / 1) % 60)
+    const seconds = Math.floor((milliseconds / 1000) % 60)
       .toString()
       .padStart(2, '0');
-    const millisecondsFormatted = (milliseconds % 1)
+    const millisecondsFormatted = (milliseconds % 1000)
       .toString()
       .padStart(1, '0');
     return `${hours}:${minutes}:${seconds}.${millisecondsFormatted}`;
